@@ -1,0 +1,48 @@
+.singleLawyers {
+  display: flex;
+  width: 100%;
+
+  .singleContainers {
+    flex: 6;
+    .toped {
+      padding: 20px;
+      display: flex;
+      .righted {
+        margin-left: 3rem;
+        // -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        // box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        width: 600px;
+        .case-details {
+          margin: 14px;
+          padding: 10px;
+          .case-title {
+            font-size: 16px;
+            color: gray;
+            margin-bottom: 10px;
+          }
+          .approve-btns {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .approve-btn {
+              background-color: rgba(0, 128, 0, 0.656);
+            }
+            .reject-btn {
+              background-color: rgba(255, 0, 0, 0.652);
+            }
+          }
+        }
+      }
+      gap: 20px;
+
+      .desc-1 {
+        margin-bottom: 8px;
+      }
+      .desc-bottom {
+        margin-top: 10px;
+        color: #999;
+        text-decoration: none;
+      }
+    }
+  }
+}

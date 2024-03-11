@@ -1,0 +1,108 @@
+.userstatus {
+  height: fit-content;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  .cases-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    h4 {
+      font-size: 12px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .case-card {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.8);
+    width: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    height: 10rem;
+  }
+
+  .case-card img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .case-card button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #CEA469;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .case-card button:hover {
+    background-color: #000;
+  }
+  .casepad {
+    padding-left: 5rem;
+  }
+  .vieww {
+    display: flex;
+    flex-direction: row;
+  }
+  .textfonti {
+    font-size: 1.4rem;
+  }
+  .view1 {
+    width: 5rem;
+  }
+ 
+}
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: #cea469;
+  color: #000;
+}
+
+/* Highlight active pagination */
+.pagination a.active {
+  background-color: #cea469;
+  color: #fff;
+  font-weight: bold;
+}

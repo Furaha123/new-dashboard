@@ -1,0 +1,14 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.MuiPickersToolbar-root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px 24px;
+
+  width: 80%;
+}

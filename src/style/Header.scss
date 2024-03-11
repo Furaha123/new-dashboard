@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+:root {
+  --box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  --transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+  --font: "Roboto Condensed", sans-serif;
+  --size: 1rem;
+
+  // font sizes
+  --font-size-base: 16px;
+
+  // Headings
+  --font-size-h1: calc(var(--font-size-base) _ 2.5);
+  --font-size-h2: calc(var(--font-size-base) _ 2);
+  --font-size-h3: calc(var(--font-size-base) _ 1.75);
+  --font-size-h4: calc(var(--font-size-base) _ 1.5);
+  --font-size-h5: calc(var(--font-size-base) _ 1.25);
+  --font-size-h6: calc(var(--font-size-base) _ 1.125);
+
+  // Paragraph
+  --font-size-p: var(--font-size-base);
+
+  // Links
+  --font-size-a: var(--font-size-base);
+}
+
+a {
+  text-decoration: none;
+  font-size: var(--font-size-a);
+}
+a:hover {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  font-family: var(--font);
+}
+
+header {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: rgb(11, 5, 5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .btn {
+    background: var(--bg-color);
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 10px 30px;
+    height: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: var(--transition);
+    z-index: 2;
+    transition: var(--transition);
+  }
+
+  .btn:hover {
+    color: rgb(11, 5, 5);
+    background: var(--white-color);
+    box-shadow: var(--box-shadow);
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  ul {
+    display: flex;
+  }
+  ul li {
+    list-style: none;
+  }
+  ul li a {
+    text-transform: capitalize;
+    padding: 1.7rem;
+    color: #fff;
+  }
+  ul li a:hover {
+    border-bottom: 1px solid rgb(206, 164, 105);
+  }
+  .nav-btn a {
+    color: #fff;
+    padding: 1rem;
+  }
+  .navlinks {
+    width: 100%;
+    padding: 0px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dropDownMenu {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  .sub-menu-wrap {
+    position: absolute;
+    top: 89%;
+    right: 4%;
+    width: 300px;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+  }
+  .sub-menu {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+  }
+  .sub-menuu {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    align-items: center;
+  }
+  .sub-menuu p {
+    margin-left: 2px;
+    cursor: pointer;
+  }
+  .uer-info {
+    display: flex;
+    align-items: center;
+    // margin-right: 100px;
+  }
+  .uer-info h5 {
+    font-weight: 500;
+  }
+  .uer-info img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 10px;
+  }
+  .sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+  }
+  .sub-menu-link p a {
+    width: 100%;
+    color: black;
+  }
+  .sub-menu-link img {
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+  }
+  .menuIcon {
+    width: 40px;
+    height: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+    color: #525252;
+  }
+  .sub-menu-link span {
+    font-size: 22px;
+    transition: transform 0.5s;
+  }
+  .sub-menu-link:hover span {
+    transform: translateX(5px);
+  }
+  .sub-menu-link:hover p {
+    font-weight: 600;
+  }
+}
+.view2 {
+  padding-top: 10rem;
+  position: absolute;
+  overflow: visible;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.tablee th,
+.tablee td,
+tr {
+  border: 1px solid #ccc;
+
+  padding: 0.5rem;
+}
+.tablee {
+  width: 100%;
+  border-collapse: collapse;
+}

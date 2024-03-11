@@ -1,0 +1,80 @@
+.datatable {
+  // max-height: 600px;
+  .title-user {
+    color: #333;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 25px;
+    font-weight: "bold";
+  }
+  padding: 20px;
+  .component-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .datagrid {
+    // width: 95%;
+    margin-left: 1rem;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  }
+  .filter-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 194, 194);
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .cellWithStatus {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .cellWithStatus.Active {
+    background-color: rgba(0, 128, 0, 0.288);
+    color: green;
+    padding: 5px 20px;
+  }
+
+  .cellWithStatus.Pending {
+    background-color: rgba(255, 0, 0, 0.259);
+    color: crimson;
+    padding: 5px 14px;
+  }
+  .cellWithRole.User {
+    color: lightcoral;
+    padding: 5px 14px;
+  }
+  .cellWithRole.Lawyer {
+    color: blueviolet;
+    padding: 5px 14px;
+  }
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: green;
+      border: 1px solid rgba(0, 128, 0, 0.345);
+    }
+
+    .deleteButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      border: 1px solid rgba(220, 20, 60, 0.392);
+      color: crimson;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.pay{
+height: fit-content;
+padding-bottom: 3rem;
+
+.payment {
+  text-align: center;
+  margin-top: 120px; 
+   border-bottom: 1px solid #000; 
+   width: 90%;
+   margin-left: 5%;
+  }
+  h5 {
+    padding-bottom: 10px; 
+    font-weight: 300;
+  }
+
+  h1 {
+    font-weight: 200;
+    margin-bottom: 10px; 
+  }
+
+  p {
+    margin-bottom: 20px; 
+  }
+
+.payCard {
+  display: flex;
+  flex-direction: row;
+    width: 90%;
+
+    // height: 500px;
+
+  gap: 50px;
+  margin-left:59px;
+  margin-top: 50px;
+}
+
+.payCardone {
+  flex: 1;
+  background-color: rgb(249, 250, 254);
+  border: 2px solid #ccc;
+
+  border-radius: 10px; 
+
+  padding: 20px; 
+    align-items: center;
+      transition: transform 0.3s ease-in-out;
+
+}
+
+.payHeader {
+
+  border-bottom: 2px solid #000; 
+  margin-bottom: 10px; 
+
+  font-size: 5px;
+}
+
+
+.padDetails h5 {
+  font-style: italic;
+  font-size: 15px;
+  box-shadow: 4px 4px 0px rgba(170, 126, 79, 0.3); 
+  
+}
+.padDetails ol{
+  margin-top: 20px;
+}
+.padDetails ol li{
+    margin-top: 10px;
+
+  font-size: 15px;
+  color: black;
+}
+.dot{
+  padding: 3px;
+  color:rgb(170, 126, 79) ;
+
+}
+.sbtn{
+  background-color: transparent;
+  color: #000;
+}
+#one{
+  margin-top: 80px;
+}
+#two{
+  margin-top: 55px;
+}
+#three{
+  margin-top: 25px;
+}
+.arrow{
+  margin-top: -15px;
+}
+
+
+}

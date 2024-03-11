@@ -1,0 +1,37 @@
+.cases-submitted {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(218, 165, 32, 0.792);
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+.delete-icon {
+  color: rgba(255, 0, 0, 0.573);
+  font-size: 18px;
+}
+.view-icon {
+  color: rgba(245, 208, 114, 0.871);
+  font-size: 18px;
+}
+.cases {
+  display: flex;
+  width: 100%;
+  .cases-container {
+    flex: 6;
+  }
+}
+.table {
+  display: flex;
+  align-items: center;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  // width: 200px;
+  margin-left: 2rem;
+}

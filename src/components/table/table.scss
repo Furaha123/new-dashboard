@@ -1,0 +1,18 @@
+.table {
+  display: flex;
+  align-items: center;
+
+  .status {
+    padding: 5px;
+    border-radius: 5px;
+    &.Booked {
+      color: green;
+      background-color: rgba(0, 128, 0, 0.216);
+    }
+
+    &.Pending {
+      color: goldenrod;
+      background-color: rgba(218, 165, 32, 0.303);
+    }
+  }
+}

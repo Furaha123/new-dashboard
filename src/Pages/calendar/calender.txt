@@ -1,0 +1,98 @@
+
+
+import React, { useState } from "react";
+import TextField from "@mui/material/TextField";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { StaticDatePicker } from "@mui/x-date-pickers/StaticDatePicker";
+import Badge from "@mui/material/Badge";
+import { PickersDay } from "@mui/x-date-pickers/PickersDay";
+import CheckIcon from "@mui/icons-material/Check";
+import "../calendar/calenda.scss";
+import { ClassNames } from "@emotion/react";
+
+const Calenda = () => {
+  const [value, setValue] = useState(new Date());
+  const [highlightedDays, setHighlightedDays] = useState([1, 2, 13]);
+
+  return (
+    <>
+      <div className="main-container">
+        <LocalizationProvider dateAdapter={AdapterDateFns}>
+          <StaticDatePicker
+            variant="static"
+            orientation="portrait"
+            value={value}
+            disableFuture
+            onChange={(newValue) => setValue(newValue)}
+            renderInput={(params) => {
+              <TextField {...params} />;
+            }}
+            renderDay={(day, _value, DayComponentProps) => {
+              const isSelected =
+                !DayComponentProps.outsideCurrentMonth &&
+                highlightedDays.indexOf(day.getDate()) >= 0;
+
+              return (
+                <Badge
+                  key={day.toString()}
+                  overlap="circular"
+                  badgeContent={
+                    isSelected ? <CheckIcon color="red" /> : undefined
+                  }
+                >
+                  <PickersDay {...DayComponentProps} />
+                </Badge>
+              );
+            }}
+          />
+        </LocalizationProvider>
+      </div>
+    </>
+  );
+};
+
+export default Calenda;
+
+
+axios 
+for tour table
+
+ // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const token =
+  //         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTNmZTc3NzI3NzgzOTU3MGQ2NmQzOGQiLCJlbWFpbCI6ImZ1cmFoYUBnbWFpbC5jb20iLCJpYXQiOjE2OTg3NTA5MzgsImV4cCI6MTY5ODc1NDUzOH0.UA7TviOcnLCqlnTXA3C7Q0Rm55B1NMmkAeCLZWNaZNs";
+  //       const config = {
+  //         headers: {
+  //           Authorization: `Bearer ${token}`,
+  //         },
+  //       };
+
+  //       const response = await axios.get(
+  //         "https://holidayplanner.onrender.com/tour",
+  //         config
+  //       );
+
+  //       if (response.data && response.data.data) {
+  //         const dataWithImagesAndStatus = response.data.data.map(
+  //           (item, index) => ({
+  //             ...item,
+  //             NO: index + 1,
+  //             status: Math.random() < 0.5 ? "Active" : "Pending",
+  //           })
+  //         );
+  //         console.log(dataWithImagesAndStatus);
+  //         setRows(dataWithImagesAndStatus);
+  //       }
+  //     } catch (error) {
+  //       console.log("Error fetching data:", error);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
+
+ <Link to="/users/new">
+            <button className="new-button">Add New Lawyer</button>
+          </Link>

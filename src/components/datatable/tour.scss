@@ -1,0 +1,130 @@
+.tourtable {
+  width: 100%;
+  display: flex;
+  .title-user {
+    color: #333;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 25px;
+    font-weight: "bold";
+  }
+  .tourtableContainer {
+    flex: 6;
+
+    .datatable {
+      // height: 600px;
+      padding: 20px;
+
+      .new-button {
+        margin-bottom: 10px;
+        padding: 7px 10px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #c29d59f7;
+        border: 1px solid #c29d59;
+        border-radius: 5px;
+      }
+
+      .cellWithStatus {
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 4px;
+        text-align: center;
+      }
+
+      .cellWithStatus.Asign {
+        background-color: rgba(0, 128, 0, 0.288);
+        color: green;
+        padding: 5px 20px;
+      }
+
+      .cellWithStatus.Pending {
+        background-color: rgba(255, 0, 0, 0.259);
+        color: crimson;
+        padding: 5px 14px;
+      }
+      .cellAction {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        .viewButton1 {
+          margin-right: -5px;
+          padding: 2px 5px;
+          border-radius: 5px;
+          color: green;
+          border: 1px solid rgba(0, 128, 0, 0.345);
+        }
+
+        .deleteButton1 {
+          margin-right: -5px;
+          padding: 2px 5px;
+          border-radius: 5px;
+          border: 1px solid rgba(220, 20, 60, 0.392);
+          color: crimson;
+        }
+      }
+    }
+    .lawyers-cell {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+
+    .text-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .email {
+      color: #777;
+    }
+    .toolbar {
+      font-size: 15px;
+      font-weight: bold;
+      color: rgba(218, 165, 32, 0.792);
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+      text-transform: uppercase;
+
+      h2 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+
+      .search-bar {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        input {
+          padding: 8px;
+          border: 1px solid #c29d59;
+          border-radius: 17px;
+          font-size: 1.1rem;
+          padding-left: 30px;
+          text-align: center;
+        }
+
+        .icon {
+          position: absolute;
+          left: 60px;
+          font-size: 30px;
+          color: #c29d59;
+        }
+      }
+    }
+  }
+}
